@@ -78,7 +78,7 @@ public class Player extends Unit {
             this.killer = null;
         }
 
-        this.lives = lives;
+        if (lives >= 0) this.lives = lives;
     }
 
     public void decrementLives() {
